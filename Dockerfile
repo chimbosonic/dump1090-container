@@ -24,6 +24,7 @@ RUN curl ${SDRPLAY_API} -o SDRplay_RSP_API.run \
 FROM debian:buster-slim
 
 COPY  --from=builder /opt/dump1090/dump1090 /opt/dump1090/dump1090
+COPY  --from=builder /opt/dump1090/public_html /opt/dump1090/public_html
 COPY  --from=builder /opt/dump1090/x86_64/libsdrplay_api.so.3.07 /usr/local/lib/libsdrplay_api.so
 COPY  --from=builder /opt/dump1090/x86_64/libsdrplay_api.so.3.07  /usr/local/lib/libsdrplay_api.so.3.07
 COPY  --from=builder /opt/dump1090/x86_64/sdrplay_apiService /opt/dump1090/sdrplay_apiService
