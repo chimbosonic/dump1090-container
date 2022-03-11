@@ -38,4 +38,13 @@ This will build the container.
 make build
 ```
 
+### NOTES
+
+dump1090's internal webserver is bad and currently broken. This container includes the HTML stuff but I wouldn't recommend it.
+You could host the `js` and `index.html` on its own http server and refer to the `data/*.json` endpoint.
+I run `mikenye/readsb-protobuf` from https://github.com/sdr-enthusiasts/docker-readsb-protobuf and have it connect to dump1090 (sadly it can't use the RSP1A directly). I then have readsb host the webserver and also push the metrics to influx and grafana.
+I also had luck with https://github.com/claws/dump1090-exporter allowing to export dump1090's data to prometheus.
+I would share how all of this connects but all my code is specific to my environment. If you have any questions I can try and answer them.
+
+
 All credit to the maintainers of [dump1090](https://github.com/SDRplay/dump1090).
