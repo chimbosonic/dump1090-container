@@ -4,4 +4,5 @@
 P1=$!
 /opt/dump1090/dump1090 "$@" &
 P2=$!
-wait $P1 $P2
+wait -n $P1 $P2
+wait
