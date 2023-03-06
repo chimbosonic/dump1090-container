@@ -1,6 +1,7 @@
 # dump1090 OCI image
 
 ![pipeline status](https://github.com/chimbosonic/dump1090-container/actions/workflows/main.yml/badge.svg?branch=main)
+[![Docker Repository on Quay](https://quay.io/repository/chimbosonic/dump1090/status "Docker Repository on Quay")](https://quay.io/repository/chimbosonic/dump1090)
 
 This is a dump1090 with SDRplay support OCI image built using https://github.com/SDRplay/dump1090.
 
