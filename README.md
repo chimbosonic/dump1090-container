@@ -1,13 +1,13 @@
-# dump1090 OCI image
-
 ![pipeline status](https://github.com/chimbosonic/dump1090-container/actions/workflows/main.yml/badge.svg?branch=main)
-[![Docker Repository on Quay](https://quay.io/repository/chimbosonic/dump1090/status "Docker Repository on Quay")](https://quay.io/repository/chimbosonic/dump1090)
+# dump1090 OCI image
 
 This is a dump1090 with SDRplay support OCI image built using https://github.com/SDRplay/dump1090.
 
 Base image is `debian:buster-slim`.
 
-The image is available on Docker Hub [here](https://hub.docker.com/repository/docker/chimbosonic/dump1090)
+The image can be pulled from the following repositories:
+- Docker Hub [here](https://hub.docker.com/repository/docker/chimbosonic/dump1090)
+- Quay.io [here](https://quay.io/repository/chimbosonic/dump1090)
 
 Source code and pipeline can be found [here](https://github.com/chimbosonic/dump1090-container)
 
