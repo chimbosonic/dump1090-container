@@ -1,4 +1,4 @@
-FROM debian:buster-slim as builder
+FROM debian:bookworm-slim AS builder
 
 ARG DUMP_1090_REPO=https://github.com/SDRplay/dump1090.git
 ARG SDRPLAY_API=https://www.sdrplay.com/software/SDRplay_RSP_API-Linux-3.07.1.run
@@ -21,7 +21,7 @@ RUN curl ${SDRPLAY_API} -o SDRplay_RSP_API.run \
 && ldconfig \
 && make
 
-FROM debian:buster-slim
+FROM debian:bookworm-slim
 
 COPY  --from=builder /opt/dump1090/dump1090 /opt/dump1090/dump1090
 COPY  --from=builder /opt/dump1090/public_html /opt/dump1090/public_html
