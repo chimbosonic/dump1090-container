@@ -3,7 +3,7 @@
 
 This is a dump1090 with SDRplay support OCI image built using https://github.com/SDRplay/dump1090.
 
-Base image is `debian:buster-slim`.
+Base image is `debian:bookworm-slim`.
 
 The image can be pulled from the following repositories:
 - Docker Hub [here](https://hub.docker.com/repository/docker/chimbosonic/dump1090)
